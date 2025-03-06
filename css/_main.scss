@@ -1,0 +1,112 @@
+@use 'abstracts' as *;
+@forward 'base';
+@forward 'components';
+@forward 'layouts';
+
+* {
+    font-family: "Noto Sans JP";
+    color: $text-dark-primary;
+}
+
+html, body {
+    background-color: $bg-body-light-primary;
+    scroll-behavior: smooth;
+    scroll-padding: 4em;
+    font-size: 18px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    font-family: 'Noto Serif JP', Arial, sans-serif;
+    color: $arcadia-primary-one;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+#content {
+    margin-top: 4rem;
+}
+
+.text-pink {
+    color: $arcadia-secondary-one;
+}
+
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.bg--miru {
+    background-color: $miru-primary;
+}
+.text--miru {
+    color: $miru-primary;
+}
+
+.bg--yomu {
+    background-color: $yomu-primary;
+}
+.text--yomu {
+    color: $yomu-primary;
+}
+
+.bg--tsunagu {
+    background-color: $tsunagu-primary;
+}
+.text--tsunagu {
+    color: $tsunagu-primary;
+}
+
+.bg--iku {
+    background-color: $iku-primary;
+}
+.text--iku {
+    color: $iku-primary;
+}
+
+.bg--asobu {
+    background-color: $asobu-primary;
+}
+.text-asobu {
+    color: $asobu-primary;
+}
+
+.bg--kiku {
+    background-color: $kiku-primary;
+}
+.text--kiku {
+    color: $kiku-primary;
+}
+
+.text--white {
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+}

@@ -1,0 +1,272 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    height: 4rem;
+    background-color: $arcadia-primary-one;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+
+    &__inner-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: $max-width;
+        height: 100%;
+        padding: .5rem 20px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+
+        .active {
+            color: $arcadia-secondary-one;
+            font-weight: bold;
+        }
+
+        a, &__dropdown-header {
+            display: block;
+            padding: 1rem 20px;
+            width: 100%;
+            color: white;
+
+            &:hover {
+                background-color: $arcadia-primary-two;
+            }
+        }
+        
+        // Mobile only
+        &--open {
+            position: fixed;
+            overflow-y: scroll;
+            left: 0;
+            top: 4rem;
+            padding-bottom: 4rem;
+            width: 100%;
+            height: 100%;
+            background-color: $arcadia-primary-one;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__dropdown-header {
+            cursor: pointer;
+        }
+
+        &__item {
+
+            .dropdown {
+                overflow: hidden;
+                max-height: 0;
+                transition: all .5s ease-in-out;
+
+                ul {
+                    padding-left: 0;
+                    
+                    li {
+                        padding-left: 2rem;
+                        list-style-type: none;
+                    }
+                }
+            }
+
+            &#apps {
+                .dropdown {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 2rem;
+                    right: 0;
+
+                    &__label {
+                        color: white;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        margin-bottom: 1rem;
+                    }
+
+                    .app-logo {
+                        height: 36px;
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                display: flex;
+                                align-items: center;
+                                column-gap: .5rem;
+                                width: max-content;
+                                border-radius: 5px;
+
+                                p {
+                                    color: white;
+
+                                    &.active {
+                                        color: $arcadia-secondary-one;
+                                    }
+                                }
+
+                                &:hover {
+                                    p {
+                                        color: $arcadia-secondary-one;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--dropdown-open {
+                .dropdown {
+                    max-height: 5000px
+                }
+
+                &#apps {
+                    .dropdown {
+                        padding: 1rem 1rem 1rem 2rem;
+                    }
+                }
+            }
+
+        }
+
+        .mobile-buttons {
+            padding: 0 20px;
+
+            a {
+                display: flex;
+                padding: 0 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__logo {
+        height: inherit;
+
+        a, img {
+            height: inherit;
+        }
+    }
+
+    &__buttons {
+        align-items: center;
+        column-gap: 18px;   
+
+        &.desktop-only {
+            display: none;
+        }
+    }
+
+    &__mobile-nav {
+        height: inherit;
+
+        img {
+            height: 100%;
+            color: white;
+            stroke: white;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+
+        &__inner-wrapper {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            height: inherit;
+            padding: 0 20px;
+        }
+    
+        &__logo {
+            height: inherit;
+            display: flex;
+
+            img {
+                margin: auto 0;
+                height: 75%;
+            }
+
+            a {
+                display: contents;
+                width: fit-content
+            }
+        }
+    
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .top-level {
+                border-radius: 10px;
+            }
+            
+            a, &__dropdown-header {
+                padding: .5rem 20px
+            }
+            
+            &__dropdown-header {
+                display: flex;
+                align-items: center;
+                column-gap: .5rem;
+            }
+            
+            &__arrow {
+                height: 16px;
+                animation: rotate .5s;
+            }
+
+            &__item {
+                position: relative;
+
+                &#apps {
+                    .dropdown {
+                        flex-direction: row;
+                    }
+                }
+    
+                .dropdown {
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 4rem;
+                    background-color: $arcadia-primary-one;
+                    box-shadow: $box-shadow-default;
+
+                    ul {
+    
+                        li {
+                            width: 100%;
+                            padding-left: 0;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+    
+                &--dropdown-open {
+
+                    .nav__arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+    
+            }
+        }
+
+        &__buttons {
+
+            &.desktop-only {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

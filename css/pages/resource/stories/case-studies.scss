@@ -1,0 +1,85 @@
+@use '../../../main';
+@use '../../../abstracts/variables' as *;
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../../../../css/base/noto_sans_jp/NotoSansJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../../../css/base/noto_serif_jp/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+#content {
+    position: relative;
+
+    #title {
+        .section-content__image {
+            img {
+                max-height: 550px;
+            }
+        }
+    }
+
+    #cases {
+
+        .case-card {
+            background-color: #FEEEC8;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: $box-shadow-default;
+           
+            &__image {
+                max-height: 250px;
+                overflow: hidden;
+
+                img {
+                    border-radius: 0;
+                    box-shadow: none;
+                    width: 100%;
+                }
+            }
+            &__text {
+                padding: 1.5rem;
+
+                .app-name {
+                    padding: 14px 18px;
+                    width: fit-content;
+                    border-radius: 38px;
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    color: $arcadia-primary-one;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+
+    #content {
+        
+        #blob {
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

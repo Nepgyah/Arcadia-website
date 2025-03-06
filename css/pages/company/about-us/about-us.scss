@@ -1,0 +1,202 @@
+@use '../../../main';
+@use '../../../abstracts/variables' as *;
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../../../base/noto_sans_jp/NotoSansJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../../base/noto_serif_jp/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+#content {
+
+    #hero {
+
+        .hero__bg-mask {
+            opacity: .7;
+        }
+    }
+
+    #intro {
+        
+        .section-main {
+            order: 2;
+        }
+
+        .section-content__image {
+            order: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #d2x-logo {
+                box-shadow: none;
+                height: 65%;
+            }
+        }
+
+        #leaders-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            img {
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #values {
+        background: $arcadia-gradient-vertical;
+
+        #values-blob {
+            top: 0;
+            right: 0;
+        }
+        
+        .section-content {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .value-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
+
+    #founder-quote {
+        .section-quote {
+            background: linear-gradient(to right, #483D8B, #9370DB);
+            grid-template-columns: 60% 40%;
+            p, h2 {
+                color: white;
+            }
+        }
+    }
+
+    #awards {
+
+        .section-content--four-col {
+            grid-template-columns: 1fr;
+        }
+        .award-card {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+            align-items: center;
+            text-align: center;
+            border-radius: 15px;
+            border: 4px solid $arcadia-primary-one;
+
+            &__icon {
+                box-shadow: none;
+            }
+
+            &__name {
+                font-size: 1.25rem;
+            }
+
+            &__description {
+                font-size: .75rem;
+            }
+        }
+    }
+
+    #job {
+
+        .section-main {
+            justify-content: center;        
+        }
+
+        .section-content__image {
+            position: relative;
+
+            #job-blob {
+                position: absolute;
+                z-index: 1;
+                box-shadow: none;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+    
+            #abydos-club {
+                margin: auto;
+                position: relative;
+                z-index: 2;
+            }
+            
+            #astral-express {
+                position: relative;
+                z-index: 2;
+                margin-top: 1rem;
+                float: right;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    #streamer-quote {
+        .section-quote {
+            background: linear-gradient(to right, #F6A875, #E63946);
+            grid-template-columns: 40% 60%;
+            p, h2 {
+                color: white;
+            }
+        }
+    }
+
+    #collab {
+
+        .section-content__image {
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                padding: 2rem;
+                width: 50%;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #content {
+        
+        #intro {
+        
+            .section-main {
+                order: 1;
+            }
+    
+            .section-content__image {
+                order: 2;
+            }
+
+            #leaders-container {
+                justify-content: flex-start;
+            }
+        }
+        #awards {
+            .section-content--four-col {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}

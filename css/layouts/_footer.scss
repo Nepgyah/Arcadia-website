@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+    background-color: $arcadia-primary-one;
+
+    &__wrapper {
+        max-width: 75rem;
+        padding: 3rem 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        margin: auto;
+
+        p {
+            color: white;
+        }
+    }
+
+    &__overview {
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+
+            &:nth-child(2) {
+                margin-top: 1rem;
+            }
+            
+            li {
+                color: white;
+
+                &.title {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .footer {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 5rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+
+.button {
+    width: fit-content;
+    height: 44px;
+    padding: 0 2rem;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+
+    border-radius: 22px;
+    box-shadow: $box-shadow-default;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--primary {
+        background-color: $arcadia-primary-one;
+        color: white;
+
+        &:hover {
+            background-color: $arcadia-primary-two;
+        }
+
+        &--pink {
+            background-color: $arcadia-secondary-one;
+            color: $arcadia-primary-one;
+
+            &:hover {
+                background-color: $arcadia-secondary-two;
+            }
+        }
+    }
+
+    &--outline {
+        border: 2px solid;
+        border-color: $arcadia-primary-one;
+    }
+
+    &--header-primary {
+        background-color: #FFC2C2;
+    }
+
+    &--header-secondary {
+        border: 1px solid white;
+        color: white;
+    }
+}

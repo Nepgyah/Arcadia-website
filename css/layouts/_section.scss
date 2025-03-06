@@ -1,0 +1,223 @@
+@use "../abstracts/variables" as *;
+
+.section {
+    padding: 4.5rem 20px;
+    position: relative;
+    overflow: hidden;
+
+    &__bg-image {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__bg-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background-color: black;
+        opacity: .5;
+    }
+    
+    &__wrapper {
+        max-width: $max-width;
+        margin: auto;
+        position: relative;
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.5rem;
+    }
+
+    &--margin-top-large {
+        padding-top: 6.5rem;
+    }
+
+    .section-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+    
+        &--white {
+            h2, p {
+                color: white;
+            }
+        }
+
+        &--headline {
+            .section-main__mini-title {
+                position: relative;
+                font-size: 1.25rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    width: 30%;
+                    height: 2px;
+                    background-color: $arcadia-secondary-one;
+                }
+            }
+        }
+
+        &__mini-title {
+            font-size: .75rem;
+        }
+
+        &--center {
+            text-align: center;
+
+            .section-main__button-container {
+                margin: auto;
+            }
+        }
+
+        &__button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        img {
+            border-radius: 15px;
+            box-shadow: $box-shadow-default;
+        }
+
+        &--four-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.25rem;
+
+            &--white {
+                h3 {
+                    color: $arcadia-secondary-one;
+                } 
+
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        &__image {
+         
+        }
+    }
+
+    .section-quote {
+        border-radius: 24px;
+        box-shadow: $box-shadow-default;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        p, h2 {
+            text-align: center;
+        }
+
+        &__image {
+            margin: auto;
+
+            img {
+                max-height: 300px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .section {
+        padding: 5rem 20px;        
+        
+        &--margin-top-large {
+            padding-top: 9rem;
+        }
+
+        &--margin-bottom-large {
+            padding-bottom: 9rem;
+        }
+
+        .section-main {
+
+            &--half-width {
+                width: 50%;
+            }
+
+            &__button-container {
+                flex-direction: row;
+                column-gap: 2rem;
+                justify-content: space-around;
+            }
+        }
+
+        .section-content {
+
+            &--two-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+            }
+
+            &--three-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2rem;
+            }
+            &--four-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        .section-quote {
+            display: grid;
+            column-gap: 1rem;
+            padding: 2.5rem;
+
+            p, h2 {
+                text-align: left;
+            }
+
+            .section-main {
+                justify-content: center;   
+            }
+
+            &__image {
+
+                img {
+                    max-height: 400px;
+                }
+
+                .person-name {
+                    font-weight: bold;
+                }
+
+                .person-title {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

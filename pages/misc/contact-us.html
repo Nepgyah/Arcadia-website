@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/global/favicon.png">
+    <link rel="stylesheet" href="../../css/pages/misc/contact-us/contact-us.css">
+</head>
+<body>
+
+    <header class="header" id="top-nav">
+        <div class="header__inner-wrapper">
+            <div class="header__logo">
+                <a href="../../index.html">
+                    <img src="../../assets/global/logo_white.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav" id="navigation">
+                <div class="nav__item">
+                    <a class="link top-level" href="../../index.html">Home</a>
+                </div>
+                <div id="nav-resource" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-resource')">Resource <img class="desktop-only nav__arrow" src="../../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../resource/stories/case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-company" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-company')">D2X <img class="desktop-only nav__arrow" src="../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../company/about-us.html">About Us</a></li>
+                            <li><a href="../company/team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-buttons mobile-only">
+                    <a href="./construction.html" class="button button--header-primary">Login</a>
+                    <a href="#" class="button button--header-secondary">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header__buttons desktop-only">
+                <a href="./construction.html" class="button button--header-primary">Login</a>
+                <a href="#" class="button button--header-secondary">Contact Us</a>
+            </div>
+            <div class="header__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="../../assets/global/hamburger.png" alt="A hamburger">
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <section id="hero" class="section">
+            <div class="section__wrapper">
+                <div class="section-main">
+                    <h1>Contact Us</h1>
+                    <p>Got a inquiry or question? Fill out the form and we’ll get in touch with you as soon as possible!</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__wrapper">
+                <div class="section-content section-content--two-col">
+                    <div id="detail-column">
+                        <div class="section-content__text">
+                            <h2>Other Ways to Reach Us!</h2>
+                            <div id="contact-options">
+                                Email
+                            </div>
+                            <h2>Or Stop By One of Our Offices</h2>
+                            <div id="office-locations">
+                                <div class="location">
+                                    <img src="../../assets/global/icons/location-pin.svg" alt="Location pin">
+                                    <div>
+                                        <p>3-14-77 Millennium Ave, Schale HQ, Kivotos</p>
+                                        <p>Abydos Ward, Kivotos Metropolitan Area</p>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <img src="../../assets/global/icons/location-pin.svg" alt="Location pin">
+                                    <div>
+                                        <p>Sector 7, Main Wing, Herta Space Station</p>
+                                        <p>Aeon of Erudition, Interstellar Science Consortium</p>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <img src="../../assets/global/icons/location-pin.svg" alt="Location pin">
+                                    <div>
+                                        <p>4-21-7 Akihabara Tech Square, Chiyoda City</p>
+                                        <p>Tokyo 101-0021, Japan</p>
+                                    </div>
+                                </div>
+                                <div class="location">
+                                    <img src="../../assets/global/icons/location-pin.svg" alt="Location pin">
+                                    <div>
+                                        <p>77 Skybound Avenue, Star-skiff Port, Jade Gate Plaza</p>
+                                        <p>Xianzhou Luofu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="form-column">
+                        <form id="contact-form">
+                            <div class="form-section">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-section">
+                                <label for="name">Email</label>
+                                <input type="text" id="email" name="email" placeholder="email" required>
+                            </div>
+                            <div class="form-section">
+                                <label for="message">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message"
+                                    rows="7"
+                                    placeholder="Your message here! ;-;"
+                                    required
+                                ></textarea>
+                            </div>
+                            <input id="submit" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__overview">
+                <img src="../../assets/global/logo_white.svg" alt="Arcadia logo with white text">
+                <p>Arcadia is a pretend platform created to practice and learn about full stack development using a subject that is more personal to me. Thanks for stopping by!</p>
+            </div>
+            <div class="footer__links">
+                <div>
+                    <ul>
+                        <li class="title">Primary Apps</li>
+                        <a href="../apps/primary/miru.html"><li>Miru</li></a>
+                        <a href="../apps/primary/yomu.html"><li>Yomu</li></a>
+                        <a href="../apps/primary/asobu.html"><li>Asobu</li></a>
+                        <a href="../apps/primary/kau.html"><li>Kau</li></a>
+                        <a href="../apps/primary/tsunagu.html"><li>Tsunagu</li></a>
+                    </ul>
+                    <ul>
+                        <li class="title">Secondary Apps</li>
+                        <a href="../apps/secondary/hiku.html"><li>Hiku</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title">Company</li>
+                        <a href="./company/about-us.html"><li>About Us</li></a>
+                        <a href="./company/team.html"><li>Team</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact"></div>
+        </div>
+    </footer>
+
+    <script src="../../js/navbar/navbar.min.js"></script>
+</body>
+</html>

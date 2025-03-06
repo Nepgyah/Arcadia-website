@@ -1,0 +1,98 @@
+@use "../../../main";
+@use "../../../abstracts/variables" as *;
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url('../../../base/noto_sans_jp/NotoSansJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../../base/noto_serif_jp/NotoSerifJP-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900; /* Variable font supports a range of weights */
+    font-style: normal;
+    font-display: swap;
+}
+
+#content {
+
+    .member-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            row-gap: .5rem;
+
+            &__picture {
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+                box-shadow: $box-shadow-default;
+            }
+
+            &__name {
+                font-weight: bold;
+                font-family: 'Noto Serif JP', Arial, sans-serif;
+                font-size: 1.5rem;
+                color: $arcadia-primary-one;
+            }
+        }
+
+        &--white {
+            .team-member {
+                &__name, &__position {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #hero {
+        .hero__bg-mask {
+            opacity: .7;
+        }
+    }
+
+    #app-leads, #design, #devops {
+        background-color: $arcadia-primary-one;
+
+        .section-main__title {
+            color: white;
+        }
+    }
+
+    #design  {
+        background-color: $bg-black;
+        
+        .section-main__title {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #content {
+        
+        .member-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            .team-member {
+                
+                &__picture {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

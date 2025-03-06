@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia - Team D2X</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/global/favicon.png">
+    <link rel="stylesheet" href="../../css/pages/company/team/team.css">
+</head>
+<body>
+    
+    <header class="header" id="top-nav">
+        <div class="header__inner-wrapper">
+            <div class="header__logo">
+                <a href="../../index.html">
+                    <img src="../../assets/global/logo_white.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav" id="navigation">
+                <div class="nav__item">
+                    <a class="link top-level" href="../../index.html">Home</a>
+                </div>
+                <div id="nav-resource" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-resource')">Resource <img class="desktop-only nav__arrow" src="../../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../resource/stories/case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-company" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level active" onclick="openSubNav('nav-company')">D2X <img class="desktop-only nav__arrow" src="../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="./about-us.html">About Us</a></li>
+                            <li><a href="#" class="active">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-buttons mobile-only">
+                    <a href="../../misc/construction.html" class="button button--header-primary">Login</a>
+                    <a href="../../pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header__buttons desktop-only">
+                <a href="../../pages/misc/construction.html" class="button button--header-primary">Login</a>
+                <a href="../../pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+            </div>
+            <div class="header__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="../../assets/global/hamburger.png" alt="A hamburger">
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <section id="hero" class="hero hero--half-height">
+            <img class="hero__bg-image" src="../../assets/pages/company/team/hero.webp" alt="Anime themed world">
+            <div class="hero__bg-mask"></div>
+            <div class="hero__wrapper">
+                <div class="hero-text hero-text--white hero-text--center">
+                    <div class="hero-text__main">
+                        <h1 class="hero-text__headline">The D2X Team</h1>
+                        <p>Meet the team making Arcadia possible</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leadership" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Leadership</h2>
+                </div>
+                <div class="section-content member-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="app-leads" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">App Leads</h2>
+                </div>
+                <div class="section-content member-list member-list--white">
+                </div>
+            </div>
+        </section>
+
+        <section id="platform" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Platform Team</h2>
+                </div>
+                <div class="section-content member-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="design" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Design Team</h2>
+                </div>
+                <div class="section-content member-list member-list--white">
+                </div>
+            </div>
+        </section>
+
+        <section id="finance" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Finance</h2>
+                </div>
+                <div class="section-content member-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="devops" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Dev Ops</h2>
+                </div>
+                <div class="section-content member-list member-list--white">
+                </div>
+            </div>
+        </section>
+
+        <section id="innovation" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <h2 class="section-main__title">Research & Development</h2>
+                </div>
+                <div class="section-content member-list">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__overview">
+                <img src="../../assets/global/logo_white.svg" alt="Arcadia logo with white text">
+                <p>Arcadia is a pretend platform created to practice and learn about full stack development using a subject that is more personal to me. Thanks for stopping by!</p>
+            </div>
+            <div class="footer__links">
+                <div>
+                    <ul>
+                        <li class="title">Primary Apps</li>
+                        <a href="../apps/primary/miru.html"><li>Miru</li></a>
+                        <a href="../apps/primary/yomu.html"><li>Yomu</li></a>
+                        <a href="../apps/primary/asobu.html"><li>Asobu</li></a>
+                        <a href="../apps/primary/kau.html"><li>Kau</li></a>
+                        <a href="../apps/primary/tsunagu.html"><li>Tsunagu</li></a>
+                    </ul>
+                    <ul>
+                        <li class="title">Secondary Apps</li>
+                        <a href="../apps/secondary/hiku.html"><li>Hiku</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title">Company</li>
+                        <a href="./company/about-us.html"><li>About Us</li></a>
+                        <a href="./company/team.html"><li>Team</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact"></div>
+        </div>
+    </footer>
+    
+    <script src="../../js/members.js"></script>
+    <script src="../../js/navbar/navbar.min.js"></script>
+</body>
+</html>

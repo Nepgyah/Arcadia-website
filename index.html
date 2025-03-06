@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia - Your Otaku Space</title>
+    <link rel="icon" type="image/x-icon" href="assets/global/favicon.png">
+    <link rel="stylesheet" href="css/pages/homepage/homepage.css">
+</head>
+<body>
+    
+    <header class="header" id="top-nav">
+        <div class="header__inner-wrapper">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="assets/global/logo_white.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav" id="navigation">
+                <div class="nav__item">
+                    <a class="link active top-level" href="#">Home</a>
+                </div>
+                <div id="nav-resource" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-resource')">Resource <img class="desktop-only nav__arrow" src="./assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/pages/resource/stories/case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-company" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-company')">D2X <img class="desktop-only nav__arrow" src="./assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/pages/company/about-us.html">About Us</a></li>
+                            <li><a href="/pages/company/team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-buttons mobile-only">
+                    <a href="pages/misc/construction.html" class="button button--header-primary">Login</a>
+                    <a href="pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header__buttons desktop-only">
+                <a href="pages/misc/construction.html" class="button button--header-primary">Login</a>
+                <a href="pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+            </div>
+            <div class="header__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="assets/global/hamburger.png" alt="A hamburger">
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <section id="hero" class="hero hero--full-height">
+            <picture>
+                <source srcset="./assets/pages/homepage/hero/anime-world-mobile.webp" media="(max-width: 767px)" >
+                <source srcset="./assets/pages/homepage/hero/anime-world-desktop.webp" media="(min-width: 768px)" >
+                <img 
+                    class="hero__bg-image" 
+                    src="./assets/pages/homepage/hero/anime-world-default.png" 
+                    alt="Anime themed world"
+                    width="760"
+                    height="1000"
+                >
+            </picture>
+            <div class="hero__wrapper">
+                <div class="hero-text">
+                    <div class="hero-text__main">
+                        <h1 class="hero-text__headline">The Ultimate Destination for Anime, Manga and More</h1>
+                        <p>Explore a universe where anime, manga, games, and otaku culture unite. Join Arcadia and dive into a world made for fans, by fans</p>
+                        <div class="hero__button-container">
+                            <a class="button button--primary" href="#primary-apps">Explore Our Apps</a>
+                            <a class="button button--primary--pink" href="./pages/company/team.html">Check Our Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="features-primary-wrapper">
+
+            <section id="overview" class="section">
+                <div class="section__wrapper">
+                    <div id="overview-image" class="desktop-only">
+                        <div class="pink-box"></div>
+                        <picture>
+                            <source srcset="./assets/pages/homepage/overview/anime-girl-on-phone-desktop.webp" media="(min-width: 768px)" >
+                            <img 
+                                src="./assets/pages/homepage/overview/anime-girl-on-phone.png" 
+                                alt="Anime girl on her phone"
+                                width="460"
+                                height="700"
+                            >
+                        </picture>
+                    </div>
+                    <div id="summary">
+                        <div class="section-main section-main--white">
+                            <h2 class="section-main__title">Our Solution, <br />A Flagship Otaku Toolkit </h2>
+                        </div>
+                        <div class="point-container">
+                            <div class="point">
+                                <h3>All-In-One Solution</h3>
+                                <p>No more juggling multiple platforms! Arcadia combines anime tracking, manga reading, gaming, merch shopping and more.</p>
+                            </div>
+                            <div class="point">
+                                <h3>Direct Industry Connections</h3>
+                                <p>Get closer to the anime, manga, and gaming industries with exclusive content straight from studios, publishers, and developers.</p>
+                            </div>
+                            <div class="point">
+                                <h3>Supporting Indie Companies</h3>
+                                <p>Discover and support indie game developers, manga artists, and creators bringing fresh, original content to the community.</p>
+                            </div>
+                            <div class="point">
+                                <h3>Community-Driven</h3>
+                                <p>Arcadia grows with you! Whether it’s new features, events, or content, we listen to our community to build a platform that truly belongs to the fans.</p>
+                            </div>
+                            <div class="point">
+                                <h3>API & Developer Friendly</h3>
+                                <p>Arcadia isn’t just for users—it’s for builders too. Our open API lets developers create new tools, integrations, and experiences that expand the otaku ecosystem.</p>
+                            </div>
+                            <div class="point">
+                                <h3>For Fans, Not for Profit</h3>
+                                <p>No exploitative ads, no paywalls blocking basic features—Arcadia puts fans first, always.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="primary-apps" class="section">
+                <div class="section__wrapper">
+                    <div class="primary-apps-top-half">
+                        <div class="section-main section-main--white">
+                            <p class="section-main__mini-title">The Arcadia Suite</p>
+                            <h2 class="section-main__title">Essentials for the Ultimate Otaku</h2>
+                            <p class="section-main__description">Explore all the suites of Arcadia. With different sections to explore, there is sure to be a world for you.</p>
+                            <a class="button button--primary--pink" href="#">Start Today</a>
+                        </div>
+                        <div class="animation--grow-hover">
+                            <div id="miru" class="app-tile app-tile--vertical slide-top">
+                                <div class="app-tile__image">
+                                    <picture>
+                                        <source srcset="./assets/pages/homepage/app-bg/primary/miru/arcadia-mobile.webp" media="(max-width: 767px)" >
+                                        <source srcset="./assets/pages/homepage/app-bg/primary/miru/arcadia-miru-desktop.webp" media="(min-width: 768px)" >
+                                        <img 
+                                            src="./assets/pages/homepage/app-bg/primary/miru/arcadia-miru.jpg" 
+                                            alt="Anime girls enjoying watching with popcorn"
+                                            width="720"
+                                            height="125"
+                                        >
+                                    </picture>
+                                </div>
+                                <div class="app-tile__text">
+                                    <h3>Miru</h3>
+                                    <p>Explore the world of anime, one episode at a time</p>
+                                    <p class="japanese">みる</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="primary-apps-bottom-half">
+                        <div class="left-col">
+                            <div class="animation--grow-hover">
+                                <div id="yomu" class="app-tile app-tile--horizontal slide-left-slow">
+                                    <div class="app-tile__image">
+                                        <picture>
+                                            <source srcset="./assets/pages/homepage/app-bg/primary/yomu/arcadia-yomu-mobile.webp" media="(max-width: 767px)" >
+                                            <source srcset="./assets/pages/homepage/app-bg/primary/yomu/arcadia-yomu-desktop.webp" media="(min-width: 768px)" >
+                                            <img 
+                                                src="./assets/pages/homepage/app-bg/primary/yomu/arcadia-yomu.jpg" 
+                                                alt="Anime girl reading a book"
+                                                width="720"
+                                                height="125"
+                                            >
+                                        </picture>
+                                    </div>
+                                    <div class="app-tile__text">
+                                        <h3>Yomu</h3>
+                                        <p>Where words create worlds</p>
+                                        <p class="japanese">よむ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animation--grow-hover">
+                                <div id="kau" class="app-tile app-tile--horizontal slide-left-slow">
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Kau</h3>
+                                        <p>From wish list to reality</p>
+                                        <p class="japanese">かう</p>
+                                    </div>
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/kau.jpg" alt="Anime girl shopping">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="animation--grow-hover">
+                                <div id="asobu" class="app-tile app-tile--horizontal slide-right">
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Asobu</h3>
+                                        <p>The gateway to amazing journeys</p>
+                                        <p class="japanese">あそぶ</p>
+                                    </div>
+                                    <div class="app-tile__image">
+                                        <picture>
+                                            <source srcset="./assets/pages/homepage/app-bg/primary/asobu/arcadia-asobu.webp">
+                                            <img 
+                                                src="./assets/pages/homepage/app-bg/primary/asobu/arcadia-asobu.jpg" 
+                                                alt="Anime girls playing video games"
+                                            >
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animation--grow-hover">
+                                <div id="tsunagu" class="app-tile app-tile--horizontal slide-right-slow">
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/tsunagu.jpg" alt="Anime guys hanging out together">
+                                    </div>
+                                    <div class="app-tile__text">
+                                        <h3>Tsunagu</h3>
+                                        <p>Join the conversation, <br />shape the fandom</p>
+                                        <p class="japanese">つなぐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="stats" class="section">
+            <p id="arcadia-text" class="desktop-only vertical-text">アルカディア</p>
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <p class="section-main__mini-title">Growing Content</p>
+                    <h2 class="section-main__main-title">A Constant Growing Community and Library</h2>
+                </div>
+                <div class="section-content section-content--two-col">
+                    <div class="section__image">
+                        <img src="./assets/pages/homepage/anime-stats-girl.png" alt="">
+                    </div>
+                    <div class="stat-container">
+                        <div id="stat-one" class="stat">
+                            <div class="ja">マンガ</div>
+                            <div class="text">
+                                <p class="number">2K</p>
+                                <p class="label">Manga Titles</p>
+                            </div>
+                        </div>
+                        <div id="stat-two" class="stat">
+                            <div class="ja">アニメ</div>
+                            <div class="text">
+                                <p class="number">1K</p>
+                                <p class="label">Anime Shows</p>
+                            </div>
+                        </div>
+                        <div id="stat-three" class="stat">
+                            <div class="ja">ゲーム</div>
+                            <div class="text">
+                                <p class="number">450</p>
+                                <p class="label">Games</p>
+                            </div>
+                        </div>
+                        <div id="stat-four" class="stat">
+                            <div class="ja">エベント</div>
+                            <div class="text">
+                                <p class="number">100+</p>
+                                <p class="label">Yearly Events</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="section section--margin-top-large">
+            <img id="partners-sakura" class="section__bg-image desktop-only" src="assets/pages/homepage/partners-sakura.png" alt="Branch of a sakura tree">
+            <div class="section__wrapper">
+                <div class="section-main section-main--half-width">
+                    <p class="section-main__mini-title">Our Partners</p>
+                    <h2 class="section-main__title">Industry Leaders Roll With Arcadia</h2>
+                    <p class="section-main__description">Anime Studios, Game Developers, and more collaborate with Arcadia to build something special</p>
+                </div>
+                <div class="section-content">
+                    <img src="assets/partners/aniplex.svg" alt="Aniplex company logo">
+                    <img src="assets/partners/crunchyroll.svg" alt="Crunchroll company logo">
+                    <img src="assets/partners/funimation.svg" alt="Funimation company logo">
+                    <img src="assets/partners/hoyoverse.svg" alt="Hoyoverse company logo">
+                    <img src="assets/partners/nexon.svg" alt="Nexon company logo">
+                    <img src="assets/partners/square-enix.svg" alt="Square Enix company logo">
+                    <img src="assets/partners/pony-canyon.svg" alt="Pony Canyon company logo">
+                    <img src="assets/partners/yostar.svg" alt="Yostar company logo">
+                    <img src="assets/partners/ryugagotoku.png" alt="Ryu Ga Gotokku company logo">
+                    <img src="assets/partners/kotobukiya.webp" alt="Kotobukiya company logo">
+                    <img src="assets/partners/from-soft.png" alt="FromSoft company logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="foundation" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <p class="section-main__name">The Foundation Behind Arcadia</p>
+                    <h2 class="section-main__title">Built To Support The Pillars of Otaku Culture</h2>
+                </div>
+                <div class="section-content section-content--three-col">
+                    <div class="step-card slide-bottom">
+                        <img src="assets/pages/homepage/foundation/anime.jpg" alt="An anime studio">
+                        <h3>Anime Studios</h3>
+                        <p>We stand with the studios and artists who bring anime to life, advocating for official releases and fair industry practices to keep the art of storytelling thriving.</p>
+                    </div>
+                    <div class="step-card slide-bottom-delay-one">
+                        <img src="assets/pages/homepage/foundation/manga.jpg" alt="A mangaka studio">
+                        <h3>Mangakas</h3>
+                        <p>Manga is the heart of many great anime and games. We support creators by promoting legal access and fostering a community that values their work.</p>
+                    </div>
+                    <div class="step-card slide-bottom-delay-two">
+                        <img src="assets/pages/homepage/foundation/games.jpg" alt="Game developer studio">
+                        <h3>Game Developers</h3>
+                        <p>From RPGs to visual novels, gaming is a core part of otaku culture. We champion the developers who craft these experiences, ensuring their work reaches passionate fans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="middle-cta" class="section">
+            <img id="mid-cta-bg" class="section__bg-image" src="./assets/pages/homepage/mid-cta-bg.jpg" alt="">
+            <div class="section__bg-mask"></div>
+            <div class="section__wrapper">
+                <div class="section-main section-main--center section-main--white">
+                    <h2 class="section-main__title">Your Otaku World Is Waiting</h2>
+                    <p class="section-main__description">Don’t just watch. Don’t just read. Experience it all—right here on Arcadia.</p>
+                    <div class="section-main__button-container">
+                        <a class="button button--primary" href="#">Join Now</a>
+                        <a class="button button--primary--pink" href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="section">
+            <img id="red-leaves" class="section__bg-image desktop-only" src="./assets/pages/homepage/roadmap/solo-leaves.png" alt="Red leaves">
+            <img id="mountains" class="section__bg-image desktop-only" src="./assets/pages/homepage/roadmap/sand-mountain.png" alt="2 Mountains">
+            <img id="mountain-gate" class="section__bg-image desktop-only" src="./assets/pages/homepage/roadmap/mountain-with-gate.png" alt="Mountain with a gate">
+            <img id="blooming-branches" class="section__bg-image desktop-only" src="./assets/pages/homepage/roadmap/blooming-branches.png" alt="Blooming saakura branches">
+            <img id="red-moon" class="section__bg-image desktop-only" src="./assets/pages/homepage/roadmap/red-moon.png" alt="Red moon">
+            <div class="section__wrapper">
+                <div class="section-main">
+                    <p class="section-main__mini-title">The Journey Ahead</p>
+                    <h2 class="section-main__main-title">What’s Next For Arcadia</h2>
+                    <p>Arcadia is always growing! Read below to see whats in store for our platform.</p>
+                </div>
+                <div class="section-content">
+                    <div id="short-term" class="section-content__text">
+                        <h3>Fully Updated Database</h3>
+                        <p>We’re expanding and refining our anime, manga, and gaming databases to ensure you get the most accurate, up-to-date, and detailed information possible.</p>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div id="mid-term" class="section-content__text">
+                        <h3>Total App Development</h3>
+                        <p>Our mission is to bring every Arcadia app to life! From anime tracking to merch shopping, social features, and gaming hubs, we’re working to establish the foundation of all our core apps.</p>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div id="long-term" class="section-content__text">
+                        <h3>Official API Integration</h3>
+                        <p>Whether you want to build tools, integrate with third-party apps, or just tinker, our API will open up endless possibilities!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="secondary-stories-wrapper">
+            <section id="secondary-apps" class="section">
+                <div class="section__wrapper">
+                    <div class="section-main section-main--center">
+                        <p class="section-main__mini-title">Secondary Apps</p>
+                        <h2 class="section-main__title">More Than Just Essentials Within Arcadia</h2>
+                        <p class="section-main__description">Arcadia has more than just anime, manga and games. Explore the other niches we have to offer.</p>
+                    </div>
+                    <div class="section-content section-content--two-col">
+                        <div class="left-col">
+                            <div class="animation--grow-hover">
+                                <div id="iku" class="app-tile app-tile--horizontal slide-left">
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Iku</h3>
+                                        <p>Go where the community goes</p>
+                                        <p class="japanese">いく</p>
+                                    </div>
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/iku.jpg" alt="Two anime girls hanging out">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animation--grow-hover">
+                                <div id="hiku" class="app-tile app-tile--horizontal slide-left-slow">
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/hiku.jpg" alt="Anime girl playing games with a guide">
+                                    </div>
+                                    <div class="app-tile__text">
+                                        <h3>Hiku</h3>
+                                        <p>Pull your way to victory</p>
+                                        <p class="japanese">ひく</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="animation--grow-hover">
+                                <div id="shiru" class="app-tile app-tile--horizontal slide-right">
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Shiru</h3>
+                                        <p>Share and Explore otaku passions</p>
+                                        <p class="japanese">しる</p>
+                                    </div>
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/shiru.jpg" alt="Anime girl socializing at a cafe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animation--grow-hover">
+                                <div id="kumitateru" class="app-tile app-tile--horizontal slide-right-slow">
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/kumitateru.jpg" alt="Anime girl building a computer">
+                                    </div>
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Kumitateru</h3>
+                                        <p>Build your battle station</p>
+                                        <p class="japanese">くみたてる</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animation--grow-hover">
+                                <div id="kiku" class="app-tile app-tile--horizontal slide-right-slow-two">                            
+                                    <div class="app-tile__text app-tile__text--white">
+                                        <h3>Kiku</h3>
+                                        <p>Relax. Focus. Create.</p>
+                                        <p class="japanese">きく</p>
+                                    </div>
+                                    <div class="app-tile__image">
+                                        <img src="assets/pages/homepage/app-bg/kiku.jpg" alt="Anime girls listening to music while studying">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>         
+        </div>
+
+        <section id="stories" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <p class="section-main__mini-title">Otaku’s Agree</p>
+                    <h2 class="section-main__main-title">Arcadia Is a Must for Otaku Fanatics</h2>
+                </div>
+                <div class="section-content section-content--three-col">
+                    <div>
+                        <div id="jamal-story" class="story-entry">
+                            <div class="story-entry__header">
+                                <div class="story-entry__profile-picture">
+                                    <img src="./assets/pages/homepage/stories/jamal-williams.jpg" alt="">
+                                </div>
+                                <div class="story-entry__overview">
+                                    <p>Jamaal <br> <span>Williams</span></p>
+                                    <p>NFL Running Back</p>
+                                </div>
+                            </div>
+                            <div class="story-entry__text">
+                                <p>Look, I don’t just like anime—I live it. If I’m not on the field, I’m grinding through One Piece, rewatching Naruto, or catching up on the latest heat. And Arcadia? Man, this is like the ultimate training ground for otaku. Everything you need—tracking, merch, community—all in one place? That’s straight-up elite! <br /> <br /> Most places just don’t get it. But Arcadia is built different—built by real fans, for real fans. Whether you’re arguing over the best anime arcs, supporting indie creators, or just looking for a crew that gets your passion, this is the spot. No fillers, just pure fire. Believe it!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-stories">
+                        <div id="snoop-story" class="story-entry">
+                            <div class="story-entry__header">
+                                <div class="story-entry__profile-picture">
+                                    <img src="./assets/pages/homepage/stories/snoop.jpg" alt="">
+                                </div>
+                                <div class="story-entry__overview">
+                                    <p>Snoop <br> <span>Dog</span></p>
+                                    <p>Rapper</p>
+                                </div>
+                            </div>
+                            <div class="story-entry__text">
+                                <p>Man, Arcadia got that real anime energy. If you ain’t on Arcadia yet, you slippin’.</p>
+                            </div>
+                        </div>
+                        <div id="keanu-story" class="story-entry">
+                            <div class="story-entry__header">
+                                <div class="story-entry__profile-picture">
+                                    <img src="./assets/pages/homepage/stories/keanu.png" alt="">
+                                </div>
+                                <div class="story-entry__overview">
+                                    <p>Keanu <br> <span>Reeves</span></p>
+                                    <p>Actor</p>
+                                </div>
+                            </div>
+                            <div class="story-entry__text">
+                                <p>I’ve been a fan of anime for years, and Arcadia feels like the ultimate place for fans. Whether you’re into classics or discovering new gems, this platform has something for everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-stories">
+                        <div id="grande-story" class="story-entry">
+                            <div class="story-entry__header">
+                                <div class="story-entry__profile-picture">
+                                    <img src="./assets/pages/homepage/stories/ariana.jpg" alt="">
+                                </div>
+                                <div class="story-entry__overview">
+                                    <p>Ariana<br><span>Grande</span></p>
+                                    <p>Singer</p>
+                                </div>
+                            </div>
+                            <div class="story-entry__text">
+                                <p>I’ve been obsessed with anime forever, and Arcadia is like a dream come true for fans. Whether you’re binging old favorites or finding new series to fall in love with, it’s all here. </p>
+                            </div>
+                        </div>
+                        <div id="fox-story" class="story-entry">
+                            <div class="story-entry__header">
+                                <div class="story-entry__profile-picture">
+                                    <img src="./assets/pages/homepage/stories/fox.png" alt="">
+                                </div>
+                                <div class="story-entry__overview">
+                                    <p>DeAaron <br> <span>Fox</span></p>
+                                    <p>NBA Player</p>
+                                </div>
+                            </div>
+                            <div class="story-entry__text">
+                                <p>Just like in basketball, it’s all about having the right squad—Arcadia is that squad for anime fans.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__overview">
+                <img src="assets/global/logo_white.svg" alt="Arcadia logo with white text">
+                <p>Arcadia is a pretend platform created to practice and learn about full stack development using a subject that is more personal to me. Thanks for stopping by!</p>
+            </div>
+            <div class="footer__links">
+                <div>
+                    <ul>
+                        <li class="title">Primary Apps</li>
+                        <a href="apps/primary/miru.html"><li>Miru</li></a>
+                        <a href="apps/primary/yomu.html"><li>Yomu</li></a>
+                        <a href="apps/primary/asobu.html"><li>Asobu</li></a>
+                        <a href="apps/primary/kau.html"><li>Kau</li></a>
+                        <a href="apps/primary/tsunagu.html"><li>Tsunagu</li></a>
+                    </ul>
+                    <ul>
+                        <li class="title">Secondary Apps</li>
+                        <a href="apps/secondary/hiku.html"><li>Hiku</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title">Company</li>
+                        <a href="./company/about-us.html"><li>About Us</li></a>
+                        <a href="./company/team.html"><li>Team</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact"></div>
+        </div>
+    </footer>
+
+    <script src="js/scrolleffect/scrolleffect.min.js" async></script>
+    <script src="js/navbar/navbar.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+				ScrollReveal().reveal(".slide-left", {delay: 200, origin: "left", distance: "20%"});
+				ScrollReveal().reveal(".slide-left-slow", {delay: 250, origin: "left", distance: "20%"});
+				ScrollReveal().reveal(".slide-right", {delay: 200, origin: "right", distance: "20%"});
+				ScrollReveal().reveal(".slide-right-slow", {delay: 250, origin: "right", distance: "20%"});
+                ScrollReveal().reveal(".slide-right-slow-two", {delay: 300, origin: "right", distance: "20%"});
+				ScrollReveal().reveal(".slide-bottom", {delay: 200, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-bottom-delay-one", {delay: 300, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-bottom-delay-two", {delay: 400, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-top", {delay: 200, origin: "top", distance: "20%"})
+			}
+		})
+    </script>
+</body>
+</html>

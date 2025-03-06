@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia - Your Otaku Space</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/global/favicon.png">
+    <link rel="stylesheet" href="../../../css/pages/company/about-us/about-us.css">
+</head>
+<body>
+    
+    <header class="header" id="top-nav">
+        <div class="header__inner-wrapper">
+            <div class="header__logo">
+                <a href="../../index.html">
+                    <img src="../../assets/global/logo_white.svg" alt="">
+                </a>
+            </div>
+            <nav class="nav" id="navigation">
+                <div class="nav__item">
+                    <a class="link top-level" href="../../index.html">Home</a>
+                </div>
+                <div id="nav-resource" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-resource')">Resource <img class="desktop-only nav__arrow" src="../../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="../resource/stories/case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="nav-company" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level active" onclick="openSubNav('nav-company')">D2X <img class="desktop-only nav__arrow" src="../../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#" class="active">About Us</a></li>
+                            <li><a href="./team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-buttons mobile-only">
+                    <a href="../../pages/misc/construction.html" class="button button--header-primary">Login</a>
+                    <a href="../../pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+                </div>
+            </nav>
+            <div class="header__buttons desktop-only">
+                <a href="../../pages/misc/construction.html" class="button button--header-primary">Login</a>
+                <a href="../../pages/misc/contact-us.html" class="button button--header-secondary">Contact Us</a>
+            </div>
+            <div class="header__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="../../assets/global/hamburger.png" alt="A hamburger">
+            </div>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <section id="hero" class="hero hero--half-height">
+            <img class="hero__bg-image" src="../../assets/pages/company/about-us/hero.jpg" alt="Anime themed world">
+            <div class="hero__bg-mask"></div>
+            <div class="hero__wrapper">
+                <div class="hero-text hero-text--center hero-text--white">
+                    <div class="hero-text__main">
+                        <h1 class="hero-text__headline">Creators of Arcadia,<br />Team Double Dragon</h1>
+                        <p>Discover and learn about the company dedicated to creating the ultimate Otaku solution</p>
+                        <div class="hero__button-container">
+                            <a class="button button--primary" href="#values">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="section">
+            <div class="section__wrapper">
+                <div class="section-content section-content--two-col">
+                    <div class="section-main section-main--headline">
+                        <p class="section-main__mini-title">Our Company</p>
+                        <h2 class="section-main__main-title">We Are<br />Team Double Dragon</h2>
+                        <p class="section-main__description">At Team Double Dragon, we love what we do. Born from a shared passion for anime, gaming, and creativity, our mission is simple: to build solutions and celebrates fandoms and connects fans across the world.</p>
+                        <div id="leaders-container">
+                            <img src="../../assets/pages/company/team/leadership/tom-1.jpg" alt="Tommy">
+                            <img src="../../assets/pages/company/team/leadership/me.jpg" alt="Me">
+                            <img src="../../assets/pages/company/team/leadership/himeko.jpg" alt="Mommy">
+                        </div>
+                    </div>
+                    <div class="section-content__image">
+                        <img id="d2x-logo" src="../../assets/global/d2x/logo.png" alt="Team Double Dragon Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="section">
+            <img id="values-blob" class="section__bg-image desktop-only" src="../../assets/pages/company/about-us/values-blob.svg" alt="">
+            <div class="section__wrapper">
+                <div class="section-main section-main--white">
+                    <p class="section-main__mini-title">Our Values</p>
+                    <h2 class="section-main__main-title">Foundations Of<br />Team Double Dragon</h2>
+                </div>
+                <div class="section-content section-content--two-col">
+                    <div>
+                        <img src="../../assets/pages/company/about-us/values.webp" alt="">
+                    </div>
+                    <div class="value-list">
+                        <div class="section-content__text section-content__text--white">
+                            <h3>Built By Fans, For Fans</h3>
+                            <p>D2X wasn’t made by corporate suits—it was made by people who love anime, gaming, and otaku culture</p>
+                        </div>
+                        <div class="section-content__text section-content__text--white">
+                            <h3>Innovation Over Trends</h3>
+                            <p>D2X isn’t about following hype; it’s about creating something long-lasting and meaningful</p>
+                        </div>
+                        <div class="section-content__text section-content__text--white">
+                            <h3>More than A Brand</h3>
+                            <p>D2X is dedicated to fostering an inclusive environment where fans can connect, collaborate, and share their love for their favorite genres. By prioritizing the voices of our community, we aim to build a space where everyone feels welcome and valued.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="founder-quote" class="section">
+            <div class="section__wrapper">
+                <div class="section-quote">
+                    <div class="section-main">
+                        <p class="section-main__mini-title">Message From the Founder</p>
+                        <h2 class="section-main__main-title">Motivated by Passion, The D2X Way</h2>
+                        <p class="section-main__description">"Every great journey begins with a single step, but it’s the passion behind that step that turns it into something greater. At D2X, we’re not just building a platform—we’re paving the way for an otaku community that thrives together.</p>
+                        <p class="section-main__description">Just as the Astral Express serves as a vessel for exploration, we’re here to be a guide for our users—offering a space for discovery, connection, and growth. We’re not just a company; we’re part of something much bigger, something that will continue to shape the future of anime and gaming culture for years to come."</p>
+                    </div>
+                    <div class="section-quote__image">
+                        <img class="animation animation--floating" loading="lazy" src="../../assets/pages/company/about-us/himeko.webp" alt="Himeko Murata">
+                        <div>
+                            <p class="person-name">Himeko Murata</p>
+                            <p class="person-title">Co-Founder of D2X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--center">
+                    <p class="section-main__mini-title">Awards / Recognition</p>
+                    <h2 class="section-main__main-title">Making Strides in the Otaku Community</h2>
+                </div>
+                <div class="section-content section-content--four-col">
+                    <div class="award-card slide-bottom">
+                        <img class="award-card__icon" src="../../assets/pages/company/about-us/awards/award-one.png" alt="Award One Icon">
+                        <h3 class="award-card__name">Otaku Innovation Award</h3>
+                        <p class="award-card__description">Recognized for pioneering a multi-use platform for anime, manga, gaming and community engagement.</p>
+                    </div>
+                    <div class="award-card slide-bottom-delay-one">
+                        <img class="award-card__icon" src="../../assets/pages/company/about-us/awards/award-two.png" alt="Award Two Icon">
+                        <h3 class="award-card__name">Developer Rising Stars</h3>
+                        <p class="award-card__description">Awarded for supporting younger developers and their careers.</p>
+                    </div>
+                    <div class="award-card slide-bottom-delay-two">
+                        <img class="award-card__icon" src="../../assets/pages/company/about-us/awards/award-three.png" alt="Award Two Icon">
+                        <h3 class="award-card__name">Industry Official Trusted Partner</h3>
+                        <p class="award-card__description">Acknowledged for successful collaborations and partnerships with anime-related brands, artists, and industry leaders.</p>
+                    </div>
+                    <div class="award-card slide-bottom-delay-three">
+                        <img class="award-card__icon" src="../../assets/pages/company/about-us/awards/award-four.png" alt="Award Two Icon">
+                        <h3 class="award-card__name">Culture Impact Recognition</h3>
+                        <p class="award-card__description">Celebrated for promoting and preserving otaku culture worldwide through content, discussions, and original initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="job" class="section">
+            <div class="section__wrapper">
+                <div class="section-content section-content--two-col">
+                    <div class="section-main">
+                        <p class="section-main__mini-title">Join Us</p>
+                        <h2 class="section-main__main-title">Become Part of Our Journey at D2X</h2>
+                        <p class="section-main__description">Working at D2X means being part of a mission-driven team that’s dedicated to building amazing experiences for fans. Whether you’re a developer, designer, writer, or community manager, your skills and ideas will help shape the future of our platform.</p>
+                        <!-- <a class="button button--primary" href="#">View Positions</a> -->
+                    </div>
+                    <div class="section-content__image">
+                        <img id="job-blob" src="../../assets/pages/company/about-us/job-blob.svg" alt="Random art">
+                        <img id="abydos-club" src="../../assets/pages/company/about-us/job-one.png" alt="Task forclosure club">
+                        <img id="astral-express" src="../../assets/pages/company/about-us/job-two.png" alt="The Astral Express Crew">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="streamer-quote" class="section">
+            <div class="section__wrapper">
+                <div class="section-quote">
+                    <div class="section-quote__image">
+                        <picture>
+                            <source srcset="../../assets/pages/company/about-us/guinaifen.png">
+                            <img class="animation animation--floating" loading="lazy" src="../../assets/pages/company/about-us/guinaifen.webp" alt="Arcadia streamer Guinaifen">
+                        </picture>
+                        <div>
+                            <p class="person-name">Guinafen</p>
+                            <p class="person-title">Content Creator & Community Entertainer</p>
+                        </div>
+                    </div>
+                    <div class="section-main">
+                        <p class="section-main__mini-title">Message From Our CC</p>
+                        <h2 class="section-main__main-title">Bringing the Hype, One Stream at a Time!</h2>
+                        <p class="section-main__description">"At D2X, I get to do what I love—entertain, connect, and bring the hype to the fans who live and breathe anime, games, and manga. Every time I stream or create content, I’m not just sharing my passion; I’m building something bigger. Our community is everything to us—it’s about those moments of excitement, that sense of belonging, and that spark of joy we bring to fans worldwide.</p>
+                        <p class="section-main__description">If I can make someone’s day even 1% more fun, whether through a funny moment or an epic stream, then hey, that’s a win in my book! And knowing that we’re all part of something like D2X, where every otaku feels at home, makes it all the more worth it."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collab" class="section">
+            <div class="section__wrapper">
+                <div class="section-content section-content--two-col">
+                    <div class="section-content__image slide-left-slow">
+                        <img src="../../assets/partners/myanimelist.svg" alt="MyAnimeList logo">
+                        <img src="../../assets/partners/pcpartpicker.png" alt="PC Part Picker logo">
+                        <img src="../../assets/partners/gog.png" alt="Good Old Games logo">
+                        <img src="../../assets/partners/mangadex.png" alt="Mangadex logo">
+                    </div>
+                    <div class="section-main slide-right">
+                        <p class="section-main__mini-title">Direct Partnership</p>
+                        <h2 class="section-main__main-title">Collaboration for a Better Otaku Experience</h2>
+                        <p class="section-main__description">At Team Double Dragon (D2X), we believe that great things are never built alone. Arcadia exists today not just because of our vision, but because of the incredible partnerships we've forged along the way. With their help, we’ve been able to create a platform that truly serves the anime, manga, and gaming communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__overview">
+                <img src="../../assets/global/logo_white.svg" alt="Arcadia logo with white text">
+                <p>Arcadia is a pretend platform created to practice and learn about full stack development using a subject that is more personal to me. Thanks for stopping by!</p>
+            </div>
+            <div class="footer__links">
+                <div>
+                    <ul>
+                        <li class="title">Primary Apps</li>
+                        <a href="../apps/primary/miru.html"><li>Miru</li></a>
+                        <a href="../apps/primary/yomu.html"><li>Yomu</li></a>
+                        <a href="../apps/primary/asobu.html"><li>Asobu</li></a>
+                        <a href="../apps/primary/kau.html"><li>Kau</li></a>
+                        <a href="../apps/primary/tsunagu.html"><li>Tsunagu</li></a>
+                    </ul>
+                    <ul>
+                        <li class="title">Secondary Apps</li>
+                        <a href="../apps/secondary/hiku.html"><li>Hiku</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="title">Company</li>
+                        <a href="./company/about-us.html"><li>About Us</li></a>
+                        <a href="./company/team.html"><li>Team</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contact"></div>
+        </div>
+    </footer>
+
+    <script src="../../js/navbar/navbar.min.js"></script>
+    <script src="../../js/scrolleffect/scrolleffect.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+				ScrollReveal().reveal(".slide-left", {delay: 200, origin: "left", distance: "20%"});
+				ScrollReveal().reveal(".slide-left-slow", {delay: 250, origin: "left", distance: "20%"});
+				ScrollReveal().reveal(".slide-right", {delay: 200, origin: "right", distance: "20%"});
+				ScrollReveal().reveal(".slide-right-slow", {delay: 250, origin: "right", distance: "20%"});
+                ScrollReveal().reveal(".slide-right-slow-two", {delay: 300, origin: "right", distance: "20%"});
+                ScrollReveal().reveal(".slide-top", {delay: 200, origin: "top", distance: "20%"});
+				ScrollReveal().reveal(".slide-bottom", {delay: 200, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-bottom-delay-one", {delay: 300, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-bottom-delay-two", {delay: 400, origin: "bottom", distance: "20%"});
+                ScrollReveal().reveal(".slide-bottom-delay-three", {delay: 500, origin: "bottom", distance: "20%"});
+            }
+		})
+    </script>
+</body>
+</html>
